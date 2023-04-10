@@ -1,0 +1,19 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  margin-bottom: 10px;
+}
+.box:hover {
+  background-color: #00cd00;
+}
+
+.box2 {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  line-height: 80px;
+}
+.box2:hover {
+  background-color: #990000;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,11 @@
+@import 'variables';
+@import 'mixins';
+@import 'textos';
+@import 'tipografia/tipografia';
+
+h1{
+    @extend %textos;
+    color: $color-secundario;
+    background-color: $color-primario;
+}
+

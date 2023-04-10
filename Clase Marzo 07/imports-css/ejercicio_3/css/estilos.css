@@ -1,0 +1,72 @@
+body {
+  background-color: #8f2424;
+  color: #333;
+}
+
+header {
+  background-color: coral;
+  color: #6e6e6e;
+  margin: 0;
+}
+header h1 {
+  font-size: 1em;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  padding: 1em;
+}
+header nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+header nav ul li {
+  display: inline-block;
+  margin: 20px;
+}
+header nav ul li a {
+  background-color: green;
+  color: #333;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #00b300;
+}
+
+.contenido {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.contenido h2 {
+  font-size: 1em;
+  color: blue;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+.contenido p {
+  font-size: 1em;
+  color: rgb(125, 125, 163);
+  font-family: "Open Sans", sans-serif;
+}
+.contenido .button {
+  display: inline-block;
+  padding: 0.5em 1em;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+  text-decoration: none;
+  border: none;
+  border-radius: 0.5em;
+}
+.contenido .button:hover {
+  background-color: #003400;
+}
+
+footer {
+  background-color: #6e6e6e;
+  color: #fff;
+  text-align: center;
+  padding: 1em;
+}/*# sourceMappingURL=estilos.css.map */

@@ -1,0 +1,21 @@
+h1 {
+  font-size: 90px;
+  font-weight: bold;
+  font-style: oblique;
+  font-stretch: extra-expanded;
+  color: #0b0e01;
+}
+
+h2 {
+  font-size: xx-large;
+  font-weight: lighter;
+  font-style: oblique;
+  font-stretch: extra-expanded;
+  color: #9f422b;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 900;
+  color: grey;
+}/*# sourceMappingURL=estilos.css.map */

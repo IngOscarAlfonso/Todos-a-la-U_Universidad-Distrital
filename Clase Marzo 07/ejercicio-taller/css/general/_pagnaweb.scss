@@ -1,0 +1,43 @@
+body{
+    background-color: $colo-blanco;
+    font-family: $tipografia;
+}
+
+header{
+    background-color: $color-primario;
+    color: $colo-blanco;
+
+    h1{
+        font-size: 18px;
+    }
+
+    nav{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li{
+            display: inline-block;
+            margin-right: 10px;
+
+            a{
+                color: $colo-blanco;
+                text-decoration: none;
+                font-weight: bold;
+
+                &:hover{
+                    color: $color-secundario;
+                }
+            }
+        }
+    }
+}
+
+footer{
+    background-color: $color-primario;
+    color: $colo-blanco;
+    padding: 20px;
+    text-align: center;
+}

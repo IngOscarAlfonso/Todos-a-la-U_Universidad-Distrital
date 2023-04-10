@@ -1,0 +1,11 @@
+@function px-ems($px,$base:16){
+    $valor-em: $px/$base;
+    @return #{$valor-em}em;
+}
+
+.box{
+    width: px-ems(200);
+    height: px-ems(300);
+    border: 1px solid black;
+    background-color: aqua;
+}

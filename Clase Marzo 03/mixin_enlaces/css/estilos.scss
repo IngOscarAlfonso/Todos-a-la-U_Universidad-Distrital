@@ -1,0 +1,14 @@
+
+
+@mixin enlacePAgina($color,$style-underline){
+    color: $color;
+    text-decoration: $style-underline;
+
+    &:hover{
+        color:darken($color, 25%)
+    }
+}
+
+a{
+    @include enlacePAgina(#00FF00,underline)
+}

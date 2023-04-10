@@ -1,0 +1,71 @@
+@import 'variables/variables';
+@import 'mixins/mixinWeb';
+@import 'funciones/funcionesweb';
+
+body{
+    background-color: $fondo;
+    color: $texto;
+}
+
+header{
+    background-color: coral;
+    color:#6e6e6e;
+    margin: 0;
+    
+    h1{
+        @include texto('grande',#fff);
+        text-align: center;
+        padding: 1em;
+    }
+
+    nav{
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+
+            li{
+                display: inline-block;
+                margin: 20px;
+
+                a{
+                    background-color: $enlace;
+                    color: $texto;
+                    text-decoration: none;
+
+                    &:hover{
+                        color: aclarar($enlace)
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contenido{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+    h2{
+        @include texto('mediano',blue);
+        margin-bottom: 20px;
+    }
+
+    p{
+        @include texto('pequeño',rgb(125, 125, 163) )
+    }
+
+    .button{
+        @include boton($enlace)
+    }
+}
+
+footer{
+    background-color:#6e6e6e ;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+

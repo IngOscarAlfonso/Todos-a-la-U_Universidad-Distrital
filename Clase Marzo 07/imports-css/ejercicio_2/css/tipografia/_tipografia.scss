@@ -1,0 +1,12 @@
+%tipografiaParrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: black;
+}
+
+p{
+    @extend %tipografiaParrafo;
+    background-color: aqua;
+}

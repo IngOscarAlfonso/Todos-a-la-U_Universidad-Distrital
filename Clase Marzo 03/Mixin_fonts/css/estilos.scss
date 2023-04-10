@@ -1,0 +1,29 @@
+@mixin Titulos($font-size,$font-weight,$font-style,$font-stretch,$color){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-stretch: $font-stretch;
+    color:darken($color, 10%)
+}
+
+@mixin parrafos ($font-size,$font-weight,$color){
+    font-size: $font-size;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+h1{
+    @include Titulos(90px, bold, oblique, extra-expanded, #303f03)
+    
+}
+
+h2{
+    
+    @include Titulos(xx-large, lighter, oblique, extra-expanded, #c75336)
+}
+
+p{
+
+    @include parrafos(15px,900 ,grey)
+}
+

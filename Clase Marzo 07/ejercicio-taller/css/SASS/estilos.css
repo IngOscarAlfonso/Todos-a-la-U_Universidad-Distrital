@@ -1,0 +1,70 @@
+body {
+  background-color: white;
+  font-family: "Roboto", "sans-serif";
+}
+
+header {
+  background-color: red;
+  color: white;
+}
+header h1 {
+  font-size: 18px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+header nav li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+header nav li a:hover {
+  color: rgb(90, 88, 87);
+}
+
+footer {
+  background-color: red;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main section ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main section ul li {
+  width: 30%;
+  margin-bottom: 2rem;
+  padding: 10px;
+  background-color: red;
+  border-radius: 0.5rem;
+  color: white;
+}
+main section ul li h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+main section ul li p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+main section ul li button {
+  background-color: white;
+  color: red;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+main section ul li button:hover {
+  background-color: rgb(90, 88, 87);
+  color: white;
+}/*# sourceMappingURL=estilos.css.map */

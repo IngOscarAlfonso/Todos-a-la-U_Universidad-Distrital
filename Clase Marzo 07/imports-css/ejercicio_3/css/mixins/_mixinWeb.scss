@@ -1,0 +1,21 @@
+@mixin boton($color){
+    display: inline-block;
+    padding: 0.5em 1em;
+    background-color: $color;
+    color: white;
+    text-align: center;
+    font-size: tamañotexto('mediano');
+    text-decoration: none;
+    border: none;
+    border-radius: 0.5em;
+    
+    &:hover{
+        background-color: oscurecer($color);
+    }
+}
+
+@mixin texto($tamaño,$color){
+    font-size: tamañotexto('pequeño');
+    color: $color;
+    font-family: $fuente;
+}

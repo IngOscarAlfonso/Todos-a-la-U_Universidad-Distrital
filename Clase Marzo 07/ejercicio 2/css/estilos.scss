@@ -1,0 +1,17 @@
+%tarjeta{
+    border: 2px solid rgb(138, 54, 54);
+    padding: 10px;
+}
+
+.tarjeta-principal{
+    @extend %tarjeta;
+    background-color: white;
+    color: black;
+}
+
+.tarjeta-secundaria{
+    @extend %tarjeta;
+    background-color: black;
+    color: white;
+
+}
