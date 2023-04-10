@@ -1,0 +1,26 @@
+//Funciones
+
+@function aclarar($color,$porcentaje: 10%)
+{
+    @return lighten($color,$porcentaje);
+}
+
+@function oscurecer($color,$porcentaje: 15%)
+{
+    @return darken($color,$porcentaje);
+}
+
+@function tamañotexto($tamano){
+    @if $tamano == 'pequeño'{
+        @return 1em;
+    }
+    @else if $tamano == 'mediano'{
+        @return 1.5em;
+    }
+    @else if $tamano == 'grande'{
+        @return 2em;
+    }
+    @else {
+        @return 1em;
+    }
+}

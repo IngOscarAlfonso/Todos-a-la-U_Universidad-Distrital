@@ -1,0 +1,54 @@
+
+// Importar las variables del archivo functions.scss
+@import '../funciones/functions';
+// Importar las variables del archivo mixins.scss
+@import '../mixins/mixins';
+// Importar las variables del archivo vars.scss
+@import '../variables/vars';
+//Importa las configuraciones generales del documento
+@import '../general/pagnaweb';
+//Importa los place holder
+@import '../placeholder/placeHolder';
+
+main{
+    section{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+
+            li{
+                width: 30%;
+                margin-bottom: 2rem;
+                padding: 10px;
+                background-color: $color-primario;
+                border-radius: 0.5rem;
+                color: $colo-blanco;
+
+                h3{
+                    font-size: 1.5rem;
+                    margin-bottom: 1rem;
+                }
+
+                p{
+                    font-size: 1rem;
+                    margin-bottom: 1rem;
+                }
+
+                button{
+                    background-color: $colo-blanco;
+                    color: $color-primario;
+                    border: none;
+                    padding: 0.5rem 1rem;
+                    border-radius: 0.5rem;
+
+                    &:hover{
+                        background-color: $color-secundario;
+                        color: $colo-blanco;
+                    }
+                }
+            }
+        }
+    }
+}

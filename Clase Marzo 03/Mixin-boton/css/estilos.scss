@@ -1,0 +1,26 @@
+$bg_color: blue;
+$text_color: white;
+$border_width: 2px;
+
+@mixin boton
+{
+    background-color: $bg_color;
+    color:$text_color;
+    border: $border_width;
+    padding: 20px;
+    border-radius: $border_width*50;
+    font-weight: bolder;
+    &:hover{
+        background-color: darken($bg_color, 25%);
+    }
+}
+
+.boton-enviar{
+    @include boton()
+}
+
+.boton-cancelar{
+    @include boton()
+}
+
+

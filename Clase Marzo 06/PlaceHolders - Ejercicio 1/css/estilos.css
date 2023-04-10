@@ -1,0 +1,15 @@
+.boton-secundario, .boton-principal {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+}
+
+.boton-principal {
+  font-size: 16px;
+}
+
+.boton-secundario {
+  font-size: 3px;
+}/*# sourceMappingURL=estilos.css.map */

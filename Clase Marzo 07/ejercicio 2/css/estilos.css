@@ -1,0 +1,14 @@
+.tarjeta-secundaria, .tarjeta-principal {
+  border: 2px solid rgb(138, 54, 54);
+  padding: 10px;
+}
+
+.tarjeta-principal {
+  background-color: white;
+  color: black;
+}
+
+.tarjeta-secundaria {
+  background-color: black;
+  color: white;
+}/*# sourceMappingURL=estilos.css.map */

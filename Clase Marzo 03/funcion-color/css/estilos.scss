@@ -1,0 +1,36 @@
+$tamaño-box: 200px;
+$color-1: green;
+$color-2: red;
+@function aclara($color,$porcentaje: 15%){
+    @return lighten($color,$porcentaje);
+}
+
+@function oscurecer($color,$porcentaje: 20%){
+    @return darken($color,$porcentaje);
+}
+
+.box{
+    width: $tamaño-box ;
+    height: $tamaño-box;
+    background-color: $color-1;
+    margin-bottom: 10px;
+
+    &:hover{
+        background-color: aclara($color-1);
+        
+    }
+
+}
+
+.box2{
+    width: $tamaño-box ;
+    height: $tamaño-box;
+    background-color: $color-2;
+    line-height: 80px;
+
+    &:hover{
+        background-color: oscurecer($color-2);
+    }
+
+}
+

@@ -1,0 +1,17 @@
+%boton{
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+}
+
+.boton-principal{
+    @extend %boton;
+    font-size: 16px;;
+
+}
+.boton-secundario{
+    @extend%boton;
+    font-size: 3px;;
+}

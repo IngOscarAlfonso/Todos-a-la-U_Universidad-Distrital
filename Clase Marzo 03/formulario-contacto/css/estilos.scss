@@ -1,0 +1,56 @@
+$color-fondo:tomato;
+$color-texto: black;
+$fondo-formulario:#fff;
+$color-borde: #908d8d;
+$color-text-form: tomato;
+$color-activo: green;
+
+body{
+    background-color: $color-fondo;
+    color: $color-texto;
+}
+
+.formulario{
+    background-color: $fondo-formulario;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+    label{
+        display: block;
+        margin-bottom: 0.5 rem;
+        font-weight: bold;
+        }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    textarea{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $color-borde;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        font-size: 14px;
+        color: $color-text-form;
+
+        &:focus{
+            outline: none;
+            border-bottom: 1px solid $color-activo;
+        }
+    }
+
+    input[type="submit"]{
+        background-color: $color-activo;
+        color: $color-texto;
+        border:none;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover{
+            background-color: darken($color-activo,10%);
+        }
+    }
+}

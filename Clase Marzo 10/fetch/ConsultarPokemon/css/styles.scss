@@ -1,0 +1,26 @@
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0,0,0,0.15);
+}
+
+th,td{
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
+
+th{
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+tbody tr::nth-child(even){
+    background-color: #f8f9fa;
+}
+
+tbody tr:hover{
+    background-color: #e2e6ea;
+}
