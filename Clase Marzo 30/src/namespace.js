@@ -1,0 +1,18 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const autenticacion_js_1 = require("./funciones/autenticacion.js");
+const impuestos_js_1 = require("./funciones/impuestos.js");
+let respuesta = autenticacion_js_1.Autenticacion.iniciarSesion('admin', '1234');
+let respuesta2 = autenticacion_js_1.Autenticacion.cerrarSesion();
+let respuesta3 = autenticacion_js_1.Autenticacion.cambiarRol();
+let respuesta4 = autenticacion_js_1.Autenticacion.actualizarClave();
+console.log(respuesta);
+console.log(respuesta2);
+console.log(respuesta3);
+console.log(respuesta4);
+let response = impuestos_js_1.impuestos.calcularIVA(45000);
+let response1 = impuestos_js_1.impuestos.calcularICA(45000);
+let response2 = impuestos_js_1.impuestos.calcularReteIVA(45000);
+console.log(response);
+console.log(response1);
+console.log(response2);
