@@ -17,3 +17,15 @@ const listadoPalabras = {
     ]
 };
 
+export namespace palabras{
+    
+    export function buscarPalabra(){
+        const randomIndex = Math.floor(Math.random()*listadoPalabras.palabras.length);
+        const palabraOculta = palabras.palabraMayuscula(listadoPalabras.palabras[randomIndex]);
+        return palabraOculta;
+    }
+
+    export function palabraMayuscula(palabra:string){
+        return palabra.toUpperCase();
+    }
+}

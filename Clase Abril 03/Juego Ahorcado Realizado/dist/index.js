@@ -9,9 +9,15 @@ for (let letra of "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ") {
     letraBtn.classList.add("btn", "btn-primary", "letra");
     letraBtn.textContent = letra;
     letraBtn.addEventListener("click", () => {
-        juegoAhorcado.verficarLetra(letra);
+        juegoAhorcado.verificarLetra(letra);
         juegoAhorcado.actualizarPantalla();
         letraBtn.classList.add("btn-danger");
         letraBtn.disabled = true;
     });
+    letrasContainer === null || letrasContainer === void 0 ? void 0 : letrasContainer.appendChild(letraBtn);
 }
+//Agregar evento de escucha al Botón de reinicio
+const reiniciarBtn = document.querySelector("#reiniciar-btn");
+reiniciarBtn === null || reiniciarBtn === void 0 ? void 0 : reiniciarBtn.addEventListener("click", () => {
+    juegoAhorcado.reiniciar();
+});

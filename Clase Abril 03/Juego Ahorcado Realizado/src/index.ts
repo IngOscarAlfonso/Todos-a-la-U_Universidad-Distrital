@@ -15,9 +15,18 @@ for (let letra of "ABCDEFGHIJKLMNÑOPQRSTUVWXYZ")
     letraBtn.textContent = letra;
 
     letraBtn.addEventListener("click",() =>{
-        juegoAhorcado.verficarLetra(letra);
+        juegoAhorcado.verificarLetra(letra);
         juegoAhorcado.actualizarPantalla();
         letraBtn.classList.add("btn-danger");
         letraBtn.disabled = true;
-    })
+        
+    });
+
+    letrasContainer?.appendChild(letraBtn);
 }
+
+//Agregar evento de escucha al Botón de reinicio
+const reiniciarBtn = document.querySelector("#reiniciar-btn");
+reiniciarBtn?.addEventListener("click",() =>{
+juegoAhorcado.reiniciar();
+})
